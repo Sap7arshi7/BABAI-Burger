@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - Babai Burger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                🍔 Babai <span>Burger</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="success-container">
+        <div class="success-card">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>🎉 Order Confirmed!</h1>
+            <p>Thank you for ordering from Babai Burger!</p>
+            
+            <div id="orderDetails" style="text-align: left; margin: 2rem 0; padding: 1rem; background: #f9f9f9; border-radius: 10px;">
+                <p><strong>Order ID:</strong> <span id="orderId">-</span></p>
+                <p><strong>Amount Paid:</strong> $<span id="orderTotal">0.00</span> USD (≈ ৳<span id="orderTotalBDT">0</span>)</p>
+                <p><strong>Paid via:</strong> bKash (<span id="bkashNumberDisplay">-</span>)</p>
+                <p><strong>Order Time:</strong> <span id="orderDate">-</span></p>
+            </div>
+            
+            <p style="color: #2ecc71; margin-bottom: 1rem;">💚 Payment successful! Your order is being prepared.</p>
+            <p>Estimated delivery time: 30-45 minutes</p>
+            
+            <a href="menu.html" class="btn" style="margin-top: 2rem;">Order More 🍔</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>🍔 Babai Burger - Best Burgers in Town</p>
+        <p>💚 Thank you for choosing Babai Burger!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Babai Burger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                🍔 Babai <span>Burger</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1 class="section-title">🍔 Babai Burger Menu</h1>
+        <div class="menu-grid" id="menuGrid">
+            <!-- Burger 1: Classic Beef -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Classic Beef Burger</h3>
+                    <p>100% pure beef patty, fresh lettuce, tomatoes, and our secret sauce</p>
+                    <div class="price">$7.99</div>
+                    
+                    <!-- Rating Section -->
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-1"></div>
+                            <span class="rating-count" id="rating-count-1">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-1"></div>
+                        
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-1">
+                                <span class="star star-1" data-value="1">★</span>
+                                <span class="star star-1" data-value="2">★</span>
+                                <span class="star star-1" data-value="3">★</span>
+                                <span class="star star-1" data-value="4">★</span>
+                                <span class="star star-1" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-1" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-1" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(1)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(1, 'Classic Beef Burger', 7.99)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Burger 2: Grilled Chicken -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=400'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Grilled Chicken Burger</h3>
+                    <p>Juicy grilled chicken breast, fresh veggies, and garlic mayo</p>
+                    <div class="price">$8.99</div>
+                    
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-2"></div>
+                            <span class="rating-count" id="rating-count-2">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-2"></div>
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-2">
+                                <span class="star star-2" data-value="1">★</span>
+                                <span class="star star-2" data-value="2">★</span>
+                                <span class="star star-2" data-value="3">★</span>
+                                <span class="star star-2" data-value="4">★</span>
+                                <span class="star star-2" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-2" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-2" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(2)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(2, 'Grilled Chicken Burger', 8.99)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Burger 3: Double Cheese -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://cdn.pixabay.com/photo/2020/10/05/19/55/burger-5630646_640.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Double Cheese Burger</h3>
+                    <p>Two beef patties, double cheese, caramelized onions</p>
+                    <div class="price">$10.99</div>
+                    
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-3"></div>
+                            <span class="rating-count" id="rating-count-3">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-3"></div>
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-3">
+                                <span class="star star-3" data-value="1">★</span>
+                                <span class="star star-3" data-value="2">★</span>
+                                <span class="star star-3" data-value="3">★</span>
+                                <span class="star star-3" data-value="4">★</span>
+                                <span class="star star-3" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-3" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-3" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(3)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(3, 'Double Cheese Burger', 10.99)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Burger 4: Spicy Zinger -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg?auto=compress&cs=tinysrgb&w=400'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Spicy Zinger Burger</h3>
+                    <p>Crispy spicy chicken, jalapeños, and spicy sauce</p>
+                    <div class="price">$9.99</div>
+                    
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-4"></div>
+                            <span class="rating-count" id="rating-count-4">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-4"></div>
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-4">
+                                <span class="star star-4" data-value="1">★</span>
+                                <span class="star star-4" data-value="2">★</span>
+                                <span class="star star-4" data-value="3">★</span>
+                                <span class="star star-4" data-value="4">★</span>
+                                <span class="star star-4" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-4" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-4" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(4)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(4, 'Spicy Zinger Burger', 9.99)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Burger 5: Veggie Delight -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_640.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Veggie Delight Burger</h3>
+                    <p>Plant-based patty, avocado, fresh greens, and vegan sauce</p>
+                    <div class="price">$8.49</div>
+                    
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-5"></div>
+                            <span class="rating-count" id="rating-count-5">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-5"></div>
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-5">
+                                <span class="star star-5" data-value="1">★</span>
+                                <span class="star star-5" data-value="2">★</span>
+                                <span class="star star-5" data-value="3">★</span>
+                                <span class="star star-5" data-value="4">★</span>
+                                <span class="star star-5" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-5" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-5" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(5)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(5, 'Veggie Delight Burger', 8.49)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Burger 6: Mega Bacon -->
+            <div class="menu-item">
+                <div class="menu-img" style="background-image: url('https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=400'); background-size: cover; background-position: center;"></div>
+                <div class="menu-info">
+                    <h3>Mega Bacon Burger</h3>
+                    <p>Double beef, crispy bacon, cheese, and BBQ sauce</p>
+                    <div class="price">$12.99</div>
+                    
+                    <div class="rating-section">
+                        <div class="average-rating">
+                            <div class="average-stars" id="avg-stars-6"></div>
+                            <span class="rating-count" id="rating-count-6">(0 reviews)</span>
+                        </div>
+                        <div class="reviews-container" id="reviews-6"></div>
+                        <div class="write-review">
+                            <h4>⭐ Write a Review</h4>
+                            <div class="stars" id="stars-6">
+                                <span class="star star-6" data-value="1">★</span>
+                                <span class="star star-6" data-value="2">★</span>
+                                <span class="star star-6" data-value="3">★</span>
+                                <span class="star star-6" data-value="4">★</span>
+                                <span class="star star-6" data-value="5">★</span>
+                            </div>
+                            <input type="text" class="name-input" id="name-6" placeholder="Your name (optional)">
+                            <textarea class="review-input" id="comment-6" rows="2" placeholder="Share your experience..."></textarea>
+                            <button class="submit-review-btn" onclick="submitReview(6)">Submit Review</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-btn" onclick="addToCart(6, 'Mega Bacon Burger', 12.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>🍔 Babai Burger - Best Burgers in Town</p>
+        <p>📍 Dhaka, Bangladesh | 📞 017XX-XXXXXX</p>
+        <p>💚 We accept bKash payments!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
