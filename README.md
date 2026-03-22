@@ -3,7 +3,7 @@
 A fully functional restaurant e-commerce website with shopping cart, bKash payment integration, and customer review system.
 
 ## 🌟 Live Demo
-👉 [View Live Website](https://sap7arshi7.github.io/babai-burger/)
+(https://sap7arshi7.github.io/BABAI-Burger/)
 
 ## ✨ Features
 
