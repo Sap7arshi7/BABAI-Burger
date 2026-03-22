@@ -30,6 +30,7 @@ For testing, use:
 - **PIN:** 1234
 
 ## 📁 Project Structure
+
 babai-burger/
 ├── index.html # Home page
 ├── menu.html # Menu with reviews
