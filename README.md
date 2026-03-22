@@ -32,13 +32,14 @@ For testing, use:
 ## 📁 Project Structure
 
 babai-burger/
-├── index.html # Home page
-├── menu.html # Menu with reviews
-├── cart.html # Shopping cart
-├── checkout.html # bKash payment
-├── success.html # Order confirmation
-├── style.css # All styles
-└── script.js # Cart, reviews, payment logic
+
+index.html # Home page
+menu.html # Menu with reviews
+cart.html # Shopping cart
+checkout.html # bKash payment
+success.html # Order confirmation
+style.css # All styles
+script.js # Cart, reviews, payment logic
 
 ## 👨‍💻 Author
 
